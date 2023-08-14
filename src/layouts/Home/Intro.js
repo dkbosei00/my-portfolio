@@ -65,22 +65,12 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
             <DisplacementSphere />
             <header className={styles.text}>
               <h1 className={styles.name} data-visible={visible} id={titleId}>
-                <DecoderText text="Hamish Williams" delay={300} />
+                <DecoderText text="Daniel Osei" delay={300} />
               </h1>
               <Heading level={0} as="h2" className={styles.title}>
                 <VisuallyHidden className={styles.label}>
-                  {`Designer + ${introLabel}`}
+                  {`${introLabel} + Developer`}
                 </VisuallyHidden>
-                <span aria-hidden className={styles.row}>
-                  <span
-                    className={styles.word}
-                    data-status={status}
-                    style={cssProps({ delay: tokens.base.durationXS })}
-                  >
-                    Designer
-                  </span>
-                  <span className={styles.line} data-status={status} />
-                </span>
                 <div className={styles.row} component="span">
                   <AnimatePresence>
                     {disciplines.map(item => (
@@ -94,17 +84,27 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
                           <span
                             aria-hidden
                             className={styles.word}
-                            data-plus={true}
                             data-status={status}
                             style={cssProps({ delay: tokens.base.durationL })}
                           >
                             {item}
+                            {/* <span className={styles.line} data-status={status} /> */}
                           </span>
                         )}
                       </Transition>
                     ))}
                   </AnimatePresence>
                 </div>
+                <span aria-hidden className={styles.row}>
+                  <span
+                    className={styles.word}
+                    // data-plus={true}
+                    data-status={status}
+                    style={cssProps({ delay: tokens.base.durationXS })}
+                  >
+                    Developer
+                  </span>
+                </span>
               </Heading>
             </header>
             <RouterLink href="/#project-1">

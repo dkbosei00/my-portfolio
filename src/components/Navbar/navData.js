@@ -4,12 +4,12 @@ export const navLinks = [
     pathname: '/#project-1',
   },
   {
-    label: 'Details',
+    label: 'About',
     pathname: '/#details',
   },
   {
-    label: 'Articles',
-    pathname: '/articles',
+    label: 'Resume',
+    pathname: 'https://drive.google.com/file/d/1GDo9vzDLqh6vXFxpjJVfgletnNqumRj8/view?usp=sharing',
   },
   {
     label: 'Contact',
@@ -20,17 +20,17 @@ export const navLinks = [
 export const socialLinks = [
   {
     label: 'Twitter',
-    url: 'https://twitter.com/hamishMW',
+    url: 'https://twitter.com/DKBOsei',
     icon: 'twitter',
   },
-  {
-    label: 'Figma',
-    url: 'https://www.figma.com/@Hamish',
-    icon: 'figma',
-  },
+  // {
+  //   label: 'Figma',
+  //   url: 'https://www.figma.com/@Hamish',
+  //   icon: 'figma',
+  // },
   {
     label: 'Github',
-    url: 'https://github.com/HamishMW',
+    url: 'https://github.com/dkbosei00',
     icon: 'github',
   },
 ];

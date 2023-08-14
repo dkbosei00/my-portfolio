@@ -18,7 +18,7 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ['Developer', 'Prototyper', 'Animator', 'Illustrator', 'Modder'];
+const disciplines = ['Full Stack', 'Front End', 'Python'];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -83,13 +83,13 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
-        buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
+        title="Pepe's Game"
+        description="A groundbreaking Decentralised Finance (DeFi) application for betting, staking, and locking USDC & PEG tokens."
+        buttonText="View website"
+        buttonLink="https://www.app.pepesgame.com/"
         model={{
           type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
+          alt: 'Pepes game',
           textures: [
             {
               srcSet: [sprTexture, sprTextureLarge],
@@ -104,13 +104,13 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        title="createME"
+        description="An innovative AI tool designed to analyze story plots and characters for writers."
+        buttonText="View project"
+        buttonLink="/projects/createme"
         model={{
           type: 'phone',
-          alt: 'App login screen',
+          alt: 'createME',
           textures: [
             {
               srcSet: [gamestackTexture, gamestackTextureLarge],
@@ -128,13 +128,13 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
+        title="Additional Projects"
+        description="Minor projects I have worked on."
         buttonText="View project"
-        buttonLink="/projects/slice"
+        buttonLink="/projects/others"
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'Other projects',
           textures: [
             {
               srcSet: [sliceTexture, sliceTextureLarge],
